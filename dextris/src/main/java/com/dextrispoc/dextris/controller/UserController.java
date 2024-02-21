@@ -24,6 +24,7 @@ public class UserController {
 			String gettingRespose=userService.creatingUser(user);
 			if(gettingRespose.equals("saved"))
 			{
+				System.out.println("this is user controller");
 				return ResponseEntity.status(200).body(gettingRespose);
 			}
 			return ResponseEntity.status(400).body(null);

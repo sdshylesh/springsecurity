@@ -9,9 +9,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class Admin {
 	@Id
 	@GeneratedValue	
@@ -21,5 +21,5 @@ public class Admin {
 	String adminPwd;
 	String dob;
 	String phoneNum;
-	
+
 }
